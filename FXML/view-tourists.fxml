@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="15" styleClass="main-container" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.touristattraction.ViewTouristsController">
+    <Label fx:id="headerLabel" text="View Tourists" styleClass="header"/>
+    <ListView fx:id="touristListView" prefHeight="300"/>
+    <Button text="Back to Home" onAction="#goToHome" styleClass="btn"/>
+    <Button text="Login" onAction="#goToLogin" styleClass="btn"/>
+    <Button text="Sign Up" onAction="#goToSignUp" styleClass="btn"/>
+    <Button text="About Us" onAction="#goToAboutUs" styleClass="btn"/>
+    <Button text="Manage Guides" onAction="#goToManageGuides" styleClass="btn"/>
+    <Button text="Manage Attractions" onAction="#goToManageAttractions" styleClass="btn"/>
+</VBox>

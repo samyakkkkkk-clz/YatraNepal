@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="580.0" prefWidth="615.0" spacing="15" styleClass="main-container" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.touristattraction.SignUpController">
+    <Label styleClass="header" text="Sign Up" />
+    <Label styleClass="label" text="Full Name:" />
+    <TextField fx:id="fullNameField" />
+    <Label styleClass="label" text="Email or Mobile Number:" />
+    <TextField fx:id="emailMobileField" />
+    <Label styleClass="label" text="Password:" />
+    <PasswordField fx:id="passwordField" prefHeight="14.0" prefWidth="401.0" />
+    <Label styleClass="label" text="Choose a Language:" />
+    <ChoiceBox fx:id="languageChoice">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="English" />
+                <String fx:value="Nepali" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button onAction="#signUp" styleClass="btn" text="Sign Up" />
+    <Button onAction="#goToHome" styleClass="btn" text="Back to Home" />
+    <Button onAction="#goToLogin" styleClass="btn" text="Login" />
+    <Button onAction="#goToAboutUs" styleClass="btn" text="About Us" />
+    <Button onAction="#goToManageGuides" styleClass="btn" text="Manage Guides" />
+    <Button onAction="#goToManageAttractions" styleClass="btn" text="Manage Attractions" />
+    <Button onAction="#goToViewTourists" styleClass="btn" text="View Tourists" />
+</VBox>

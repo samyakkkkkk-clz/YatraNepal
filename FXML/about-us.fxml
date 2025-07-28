@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="15" styleClass="main-container" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.touristattraction.AboutUsController">
+    <Label fx:id="aboutLabel" text="About Us" styleClass="header"/>
+    <Label fx:id="descriptionLabel" text="Yatra Nepal is your trusted partner for exploring the beauty of Nepal. Our technology connects tourists with guides and attractions seamlessly." styleClass="subheader" wrapText="true"/>
+    <Button text="Back to Home" onAction="#goToHome" styleClass="btn"/>
+    <Button text="Login" onAction="#goToLogin" styleClass="btn"/>
+    <Button text="Sign Up" onAction="#goToSignUp" styleClass="btn"/>
+    <Button text="Manage Guides" onAction="#goToManageGuides" styleClass="btn"/>
+    <Button text="Manage Attractions" onAction="#goToManageAttractions" styleClass="btn"/>
+    <Button text="View Tourists" onAction="#goToViewTourists" styleClass="btn"/>
+</VBox>
